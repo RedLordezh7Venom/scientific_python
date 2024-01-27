@@ -3,7 +3,7 @@ import secrets
 import re
 import string
 
-def generate_password(length = 8, nums = 1, special_chars = 1 , uppercase = 1 , lowercase = 1):
+def generate_password(length = 16, nums = 1, special_chars = 1 , uppercase = 1 , lowercase = 1):
     #Define the possible character for the password     
     letters = string.ascii_letters
     digits = string.digits
@@ -35,7 +35,8 @@ Memory can be saved by using a generator expression.
 Generator expressions follow the syntax of list comprehensions but they use parentheses instead of square brackets.'''
             break
     return password
-    
 
-new_password = generate_password()
-print(new_password)
+''' __name__ == '__main__'. In this way, your code won't run when imported as a module'''
+if __name__ == '__main__':
+    new_password = generate_password()
+    print(new_password)
