@@ -25,7 +25,6 @@ def generate_password(length = 8, nums = 1, special_chars = 1 , uppercase = 1 , 
             (special_chars,fr'[{symbols}]')
         ]
 
-        count  = 0
         if all(
             constraint <=len(re.findall(pattern,password))
             for constraint,pattern in constraints
@@ -38,9 +37,5 @@ Generator expressions follow the syntax of list comprehensions but they use pare
         return password
     
 
-#guessed = create(8)
-#print(guessed)
-
-#pattern = r'\.'
-#quote = 'Not all those wander are lost'
-#print(re.findall(pattern,quote))
+new_password = generate_password()
+print(new_password)
