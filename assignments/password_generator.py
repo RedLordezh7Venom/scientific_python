@@ -34,7 +34,7 @@ After the all() function iterates over the newly created list, the list is delet
 Memory can be saved by using a generator expression.
 Generator expressions follow the syntax of list comprehensions but they use parentheses instead of square brackets.'''
             break
-        return password
+    return password
     
 
 new_password = generate_password()
