@@ -10,6 +10,4 @@ class Rectangle:
   def get_diagonal(self):
     return math.sqrt(self.width**2+self.height**2)
 
-
-
 class Square:
