@@ -1,0 +1,4 @@
+list comprehensions in Python by building a program that can take a camelCase or PascalCase formatted string and convert that to a snake_case formatted string.
+
+List comprehensions in Python are a concise way to construct a list without using loops or the .append() method. Apart from being briefer, list comprehensions often run faster.
+upper case in pascalcase represent start of a new word
